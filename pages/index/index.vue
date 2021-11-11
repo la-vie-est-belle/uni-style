@@ -9,7 +9,7 @@
 </template>
 
 <script>
-	import tabbar from "../../components/tabbar/t2.vue"
+	import tabbar from "../../components/tabbar/t3.vue"
 	export default {
 		components: {
 			tabbar
@@ -31,7 +31,7 @@
 					{
 						"text": "拍照",
 						"iconPath": "../../static/tabbar/camera.png",
-						"selectedIconPath": "",
+						"selectedIconPath": "../../static/tabbar/cameraSelected.png",
 					},
 					{
 						"text": "消息",

@@ -56,16 +56,18 @@
 }
 
 .middle-tab {
-	background-color: yellow;
-	width: 100rpx;
-	height: 100rpx;
+	background-color: white;
+	width: 130rpx;
+	height: 110rpx;
 	border-radius: 50%;
+	margin-bottom: 40rpx;
+	border-top: whitesmoke 1px solid;
 }
 
 .middle-tab-icon {
-	width: 70rpx;
-	height: 70rpx;
-	margin-top: 15rpx;
+	width: 80rpx;
+	height: 80rpx;
+	margin-top: 20rpx;
 }
 
 .tab-icon {
