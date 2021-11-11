@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "uni-app",
   "usingComponents": {
-    "tabbar": "/components/tabbar/t1"
+    "tabbar": "/components/tabbar/t2"
   }
 }

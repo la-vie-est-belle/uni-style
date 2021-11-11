@@ -1,8 +1,13 @@
 <template>
 	<view class="tabbar">
-		<view @click="changeTab(item.text)" v-for="(item, index) in tabs" :key="index" class="one-tab">
-			<view><image class="tab-icon" :src="currentText==item.text ? item.selectedIconPath : item.iconPath"></image></view>
-			<view><text class="tab-text" :style="currentText==item.text ?'color:black;' : 'color:#999999' ">{{ item.text }}</text></view>
+		<view @click="changeTab(item.text)" v-for="(item, index) in tabs" :key="index">
+			<view class="middle-tab" v-if="index==2">
+				<view><image class="middle-tab-icon" :src="item.iconPath"></image></view>
+			</view>
+			<view v-else class="one-tab">
+				<view><image class="tab-icon" :src="currentText==item.text ? item.selectedIconPath : item.iconPath"></image></view>
+				<view><text class="tab-text" :style="currentText==item.text ?'color:black;' : 'color:#999999' ">{{ item.text }}</text></view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -43,14 +48,24 @@
 	width: 100%;
 	height: 135rpx;
 	background-color:white;
-	/* border-top: #C0C0C0 1px solid; */
-/* 	border-top-left-radius: 10rpx;
-	border-top-right-radius: 10rpx; */
 	z-index: 1000;
 }
 
-.one-tab {
+.one-tab, .middle-tab {
 	text-align: center;
+}
+
+.middle-tab {
+	background-color: yellow;
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+}
+
+.middle-tab-icon {
+	width: 70rpx;
+	height: 70rpx;
+	margin-top: 10rpx;
 }
 
 .tab-icon {

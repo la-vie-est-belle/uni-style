@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
-    "components/tabbar/t1"
+    "pages/index/index"
   ],
   "subPackages": [],
   "window": {
@@ -10,5 +9,6 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }
