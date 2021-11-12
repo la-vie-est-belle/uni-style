@@ -1,12 +1,18 @@
 import App from './App'
+// import store from './store'
 
 // #ifndef VUE3
 import Vue from 'vue'
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
+// Vue.prototype.$store = store
 App.mpType = 'app'
 const app = new Vue({
     ...App
 })
+
+import tabbar from "./components/tabbar/t1.vue"
+Vue.component('tabbar', tabbar)
+
 app.$mount()
 // #endif
 

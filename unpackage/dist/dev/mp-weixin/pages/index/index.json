@@ -1,6 +1,4 @@
 {
-  "navigationBarTitleText": "uni-app",
-  "usingComponents": {
-    "tabbar": "/components/tabbar/t3"
-  }
+  "navigationBarTitleText": "首页",
+  "usingComponents": {}
 }

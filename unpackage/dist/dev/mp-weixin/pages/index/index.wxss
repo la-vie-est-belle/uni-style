@@ -21,9 +21,4 @@
 	font-size: 36rpx;
 	color: #8f8f94;
 }
-.tabbar {
-	position: fixed;
-	left: 0rpx;
-	bottom: 0rpx;
-}
 

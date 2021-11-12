@@ -136,52 +136,21 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tabbar = function tabbar() {__webpack_require__.e(/*! require.ensure | components/tabbar/t3 */ "components/tabbar/t3").then((function () {return resolve(__webpack_require__(/*! ../../components/tabbar/t3.vue */ 20));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default =
 {
-  components: {
-    tabbar: tabbar },
-
   data: function data() {
     return {
-      title: "Hello",
-      tabs: [
-      {
-        "text": "首页",
-        "iconPath": "../../static/tabbar/home.png",
-        "selectedIconPath": "../../static/tabbar/homeSelected.png" },
-
-      {
-        "text": "购物",
-        "iconPath": "../../static/tabbar/shop.png",
-        "selectedIconPath": "../../static/tabbar/shopSelected.png" },
-
-      {
-        "text": "拍照",
-        "iconPath": "../../static/tabbar/camera.png",
-        "selectedIconPath": "../../static/tabbar/cameraSelected.png" },
-
-      {
-        "text": "消息",
-        "iconPath": "../../static/tabbar/message.png",
-        "selectedIconPath": "../../static/tabbar/messageSelected.png" },
-
-      {
-        "text": "我的",
-        "iconPath": "../../static/tabbar/person.png",
-        "selectedIconPath": "../../static/tabbar/personSelected.png" }] };
-
-
+      title: "Hello" };
 
   },
 
