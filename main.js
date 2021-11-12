@@ -10,7 +10,7 @@ const app = new Vue({
     ...App
 })
 
-import tabbar from "./components/tabbar/t1.vue"
+import tabbar from "./components/tabbar/t3.vue"
 Vue.component('tabbar', tabbar)
 
 app.$mount()

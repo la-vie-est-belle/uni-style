@@ -16,7 +16,7 @@ var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 3));function _i
 // Vue.prototype.$store = store
 _App.default.mpType = 'app';
 var app = new _vue.default(_objectSpread({},
-_App.default));var tabbar = function tabbar() {__webpack_require__.e(/*! require.ensure | components/tabbar/t1 */ "components/tabbar/t1").then((function () {return resolve(__webpack_require__(/*! ./components/tabbar/t1.vue */ 26));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+_App.default));var tabbar = function tabbar() {__webpack_require__.e(/*! require.ensure | components/tabbar/t3 */ "components/tabbar/t3").then((function () {return resolve(__webpack_require__(/*! ./components/tabbar/t3.vue */ 28));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 
