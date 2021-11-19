@@ -1,12 +1,10 @@
 <template>
 	<view class="self">
 		<view>
-			<view class="self-bg-banner"></view>
-			<view class="self-bg-wave1"></view>
-			<view class="self-bg-wave2"></view>
+			<view class="bg-banner"></view>
 		</view>
-		<view class="self-content">
-			<view class="self-content-top">
+		<view class="content">
+			<view class="content-top">
 				<view class="top-first">
 					<image class="top-avatar" src="../../static/self/avatar.jpg"></image>
 					<view class="top-username-intro">
@@ -32,15 +30,42 @@
 					</view>
 				</view>
 			</view>
-			<view class="self-content-center">
+			<view class="content-center">
 				<view class="center-first">
 					<text class="center-title">我的订单</text>
 					<text class="center-button">查看所有订单 ></text>
 				</view>
-				<view>
-					
+				<view class="center-second">
+					<view class="center-second-item">
+						<image src="../../static/self/pay.png"></image>
+						<text>待付款</text>
+					</view>
+					<view class="center-second-item">
+						<image src="../../static/self/delivery.png"></image>
+						<text>待发货</text>
+					</view>
+					<view class="center-second-item">
+						<image src="../../static/self/receive.png"></image>
+						<text>待收货</text>
+					</view>
+					<view class="center-second-item">
+						<image src="../../static/self/exchange.png"></image>
+						<text>退换货</text>
+					</view>
 				</view>
 			</view>
+			<view class="content-bottom">
+				<uni-list class="uni-list">
+				    <uni-list-item title="历史订单" link="reLaunch" to="/pages/index/index"></uni-list-item>
+				    <uni-list-item title="购物收藏" link="reLaunch" to="/pages/index/index"></uni-list-item>
+					<uni-list-item title="地址管理" link="reLaunch" to="/pages/index/index"></uni-list-item>
+					<uni-list-item title="客服热线" link="reLaunch" to="/pages/index/index"></uni-list-item>
+				</uni-list>
+			</view>
+		</view>
+		
+		<view class="end-line">
+			<text>- 我是有底线的 -</text>
 		</view>
 	</view>
 </template>
@@ -58,8 +83,12 @@
 	}
 </script>
 
-<style>
-	.self-bg-banner {
+<style scoped>
+	page {
+		background-color: whitesmoke;
+	}
+	
+	.bg-banner {
 		width: 100%;
 		height: 300rpx;
 		background-image:linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
@@ -68,40 +97,13 @@
 		left: 0px;
 	}
 	
-	.self-bg-wave1 {
-		width: 100%;
-		height: 60%;
-		border-radius: 45%;
-		background-color: white;
-		position: absolute;
-		top: 20%;
-		left: 20%;
-		animation: wave-anim 8s linear infinite;
-	}
-	
-	.self-bg-wave2 {
-		width: 100%;
-		height: 60%;
-		border-radius: 45%;
-		background-color: white;
-		position: absolute;
-		top: 20%;
-		left: -20%;
-		animation: wave-anim 11s linear infinite;
-	}
-	
-	@keyframes wave-anim {
-	    0% {transform: rotate(0deg);}
-	    100% {transform: rotate(360deg);}
-	}
-	
-	.self-content {
+	.content {
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
 	
-	.self-content-top {
+	.content-top {
 		width: 700rpx;
 		height: 300rpx;
 		background-color: white;
@@ -151,7 +153,7 @@
 		border-top-right-radius: 5rpx;
 		border-bottom-right-radius: 5rpx;
 		position: relative;
-		left: 56rpx;
+		left: 70rpx;
 	}
 	
 	.top-username-intro {
@@ -179,11 +181,11 @@
 		font-size: 28rpx;
 	}
 	
-	.self-content-center {
-		width: 120%;
-		height: 260rpx;
+	.content-center {
+		width: 750rpx;
+		height: 240rpx;
 		background-color: white;
-		box-shadow: 0rpx 5rpx 15rpx 1rpx rgba(0, 0, 0, 0.1);
+		box-shadow: 0rpx 3rpx 15rpx 1rpx rgba(0, 0, 0, 0.1);
 		position: relative;
 		top: 120rpx;
 	}
@@ -208,5 +210,46 @@
 		font-size: 23rpx;
 		position: relative;
 		left: 430rpx;
+	}
+	
+	.center-second {
+		display: flex;
+		justify-content: space-around;
+		position: relative;
+		top: 60rpx;	
+	}
+	
+	.center-second-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.center-second-item > image {
+		width: 70rpx;
+		height: 70rpx;
+		opacity: 0.4;
+	}
+	
+	.center-second-item > text {
+		opacity: 0.8;
+		font-size: 29rpx;
+	}
+	
+	.content-bottom {
+		position: relative;
+		top: 150rpx;
+		width: 750rpx;
+		background-color: white;
+		box-shadow: 0rpx 3rpx 10rpx 0rpx rgba(0, 0, 0, 0.1);
+	}
+	
+	.end-line {
+		text-align: center;
+		position: relative;
+		top: 1200rpx;
+		font-size: 20rpx;
+		opacity: 0.7;
+		background-color: whitesmoke;
 	}
 </style>

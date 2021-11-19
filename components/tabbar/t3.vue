@@ -73,7 +73,7 @@
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	height: 135rpx;
+	height: 120rpx;
 	background-color:white;
 	z-index: 1000;
 	position: fixed;
@@ -97,7 +97,7 @@
 .middle-tab-icon {
 	width: 80rpx;
 	height: 80rpx;
-	margin-top: 20rpx;
+	margin-top: 25rpx;
 }
 
 .tab-icon {
