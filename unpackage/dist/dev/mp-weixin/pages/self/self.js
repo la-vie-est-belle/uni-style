@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var self = function self() {__webpack_require__.e(/*! require.ensure | components/self/s1 */ "components/self/s1").then((function () {return resolve(__webpack_require__(/*! ../../components/self/s1.vue */ 33));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var self = function self() {__webpack_require__.e(/*! require.ensure | components/self/s2 */ "components/self/s2").then((function () {return resolve(__webpack_require__(/*! ../../components/self/s2.vue */ 33));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

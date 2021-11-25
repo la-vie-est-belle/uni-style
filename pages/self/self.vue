@@ -6,7 +6,7 @@
 </template>
 
 <script>
-	import self from '../../components/self/s1.vue'
+	import self from '../../components/self/s2.vue'
 	export default {
 		components: {
 			self
